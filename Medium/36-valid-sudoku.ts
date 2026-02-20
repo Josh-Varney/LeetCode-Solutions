@@ -27,7 +27,7 @@ function isValidSudoku(board: string[][]): boolean {
         }
     }
 
-    // check 3x3 rows
+    // check 3x3 boxes
     for (let x = 0; x < 9; x += 3) {
         for (let y = 0; y < 9; y += 3) {
             let bSet = new Set<string>();
