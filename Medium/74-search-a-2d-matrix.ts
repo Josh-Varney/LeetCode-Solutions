@@ -1,6 +1,6 @@
 function searchMatrix(matrix: number[][], target: number): boolean {
     let row = 0;
-    let col = matrix[0].length - 1; // start at top-right
+    let col = matrix[0].length - 1; 
 
     while (row < matrix.length && col >= 0) {
         const val = matrix[row][col];
@@ -8,11 +8,11 @@ function searchMatrix(matrix: number[][], target: number): boolean {
         if (val === target) {
             return true;
         } else if (val > target) {
-            col--; // move left
+            col--;
         } else {
-            row++; // move down
+            row++; 
         }
     }
 
-    return false; // target not found
+    return false;
 }
